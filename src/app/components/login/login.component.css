@@ -1,0 +1,146 @@
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: E05431;
+}
+
+.imgBx{
+  position: relative;
+  width: 60%;
+  height: 100%;
+}
+.imgBx img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.contentBx{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.contentBx .formBx
+{
+  width: 50%;
+}
+.contentBx .formBx h2{
+  color:#15202B;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 4px solid red;
+  display:inline-block;
+  letter-spacing: 1px;
+}
+.contentBx .formBx .inputBx{
+  margin-bottom: 20px;
+}
+.contentBx .formBx .inputBx span{
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #15202B;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.contentBx .formBx .inputBx input{
+  width: 100%;
+  padding:10px 20px;
+  outline:none;
+  font-weight: 400;
+  border: 1px solid #15202B;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #15202B;
+  background:transparent;
+  border-radius: 30px;
+}
+.contentBx .formBx .inputBx input[type="submit"]{
+  background:#15202B ;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}.contentBx .formBx .inputBx input[type="submit"]:hover{
+  background: red;
+}
+.contentBx .formBx .remember{
+  margin-bottom: 10px;
+  color: #15202B;
+  font-weight: 400;
+  font-size: 14px;
+}
+.contentBx .formBx p{
+  color: #15202B;
+}
+.contentBx .formBx p a{
+  color: red;
+}
+.logo{
+  width:150px;
+  height: 50px;
+  position: absolute;
+  right: 20%;
+  top: 50px;
+  background-image: url('../../../assets/WHERE_.png');
+  background-size: 150px 50px;
+  background-color: rgb(21 32 43 /0.2);
+}
+
+@media (max-width:768px)
+{
+  .imgBx:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(225deg,#34506B,#15202B);
+      z-index: 1;
+      mix-blend-mode: screen;
+  }
+  .imgBx{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  .contentBx{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+  }
+  .contentBx .formBx{
+      width: 100%;
+      padding: 40px;
+      background: rgb(255 255 255 /0.9);
+      margin: 50px;
+  }
+  .logo{
+      width:150px;
+      height: 50px;
+      position: absolute;
+      right: 40%;
+      top: 50px;
+      background-image: url('../../../assets/WHERE_.png');
+      background-size: 150px 50px;
+      background-color: rgb(21 32 43 /0.2);
+  }
+}
