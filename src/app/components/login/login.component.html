@@ -1,0 +1,36 @@
+<body class="text-center">
+  <section>
+    <div class="imgBx">
+      <img src="./assets/girisb.png" alt="" />
+    </div>
+    <div class="contentBx">
+      <div class="logo"></div>
+      <div class="formBx">
+        <form [formGroup]="loginForm">
+          <h2>Login</h2>
+          <div class="form-floating inputBx">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="name@example.com"
+              formControlName="email"
+            />
+            <label for="floatingInput ">Email address</label>
+          </div>
+          <div class="form-floating inputBx">
+            <input
+              formControlName="password"
+              type="password"
+              class="form-control"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="inputBx">
+            <input class="" type="submit" (click)="login()" />Sign in>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
