@@ -1,36 +1,38 @@
-
 <body>
-    <section>
-        <div class="contentBx">
-            <div class="logo"></div>
-            <div class="formBx">
-                <h2>Create An Account</h2>
-                <form >
-                    <div class="inputBx">
-                        <span>Name</span>
-                        <input type="text">
-                    </div>
-                    <div class="inputBx">
-                        <span>E-Mail</span>
-                        <input type="email">
-                    </div>
-                    <div class="inputBx">
-                        <span>Password</span>
-                        <input type="password">
-                    </div>
-                    
-                    <div class="inputBx">
-                        <input type="submit" value="Sign up">
-                    </div>
-                    <div class="inputBx">
-                        <p>Already have an account? <a href="login.html">Sign in</a></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="imgBx">
-            <img src="./assets/girisb2.png" alt="">
-        </div>
-    </section>
-   
+  <section>
+    <div class="contentBx">
+      <div class="logo"></div>
+      <div class="formBx">
+        <h2>Create An Account</h2>
+        <form [formGroup]="registerForm">
+          <div class="inputBx">
+            <span>First Name</span>
+            <input formControlName="firstName" type="text" />
+          </div>
+          <div class="inputBx">
+            <span>Last Name</span>
+            <input formControlName="lastName" type="text" />
+          </div>
+          <div class="inputBx">
+            <span>E-Mail</span>
+            <input type="email" formControlName="email" />
+          </div>
+          <div class="inputBx">
+            <span>Password</span>
+            <input type="password" formControlName="password" />
+          </div>
+
+          <div class="inputBx">
+            <input type="submit" (click)="register()" value="Sign up" />
+          </div>
+          <div class="inputBx">
+            <p>Already have an account? <a [routerLink] = "['/login']">Sign in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="imgBx">
+      <img src="./assets/girisb2.png" alt="" />
+    </div>
+  </section>
 </body>
