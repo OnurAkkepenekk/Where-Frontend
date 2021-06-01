@@ -11,6 +11,7 @@ import { NaviComponent } from './components/navi/navi.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MainpageComponent } from './components/mainpage/mainpage.component';
     RegisterComponent,
     NaviComponent,
     MainpageComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
