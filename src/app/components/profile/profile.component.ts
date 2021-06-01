@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginModel } from 'src/app/models/loginModel';
+import { UserModel } from 'src/app/models/userModel';
+import { AuthService } from 'src/app/services/auth.service';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  user:LoginModel;
+  user:UserModel;
   constructor(private userService:UserService) { }
 
   ngOnInit(): void {
@@ -16,6 +17,8 @@ export class ProfileComponent implements OnInit {
     //email nasıl alınmalı?
   }
   getInfos(email:string){
-    this.userService.getByMail(email);
+    this.userService.getByMail(email).subscribe(response=>{
+      this.user=response.data;
+    })
   }
 }

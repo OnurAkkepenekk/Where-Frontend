@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
+import { ProfileComponent } from './components/profile/profile.component';
 import { PlacedetailComponent } from './components/placedetail/placedetail.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginGuard } from './guards/login.guard';
@@ -27,9 +28,10 @@ const routes: Routes = [
     canActivate:[LoginGuard],
   },
   {
+    path: 'profile',
+    component: ProfileComponent,
     path: 'placedetail',
     component: PlacedetailComponent,
-    
   },
 ];
 
