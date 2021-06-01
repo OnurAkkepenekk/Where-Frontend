@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { PlacedetailComponent } from './components/placedetail/placedetail.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     NaviComponent,
     MainpageComponent,
     ProfileComponent,
+    PlacedetailComponent,
   ],
   imports: [
     BrowserModule,
