@@ -27,7 +27,7 @@
             <label for="floatingPassword">Password</label>
           </div>
           <div class="inputBx">
-            <input class="" type="submit" (click)="login()" value="Sign in" />
+            <input class="" type="submit" (click)="login()" [routerLink] = "['/mainpage']" value="Sign in" />
           </div>
           <div class="inputBx">
             <p>Don't have an account? <a [routerLink] = "['/register']">Sign up</a></p>
