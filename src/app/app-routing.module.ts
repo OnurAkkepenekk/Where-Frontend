@@ -28,11 +28,13 @@ const routes: Routes = [
     canActivate:[LoginGuard],
   },
   {
-    path: 'profile',
-    component: ProfileComponent,
     path: 'placedetail',
     component: PlacedetailComponent,
   },
+  {
+    path: 'profile',
+    component: ProfileComponent,
+  }
 ];
 
 @NgModule({
