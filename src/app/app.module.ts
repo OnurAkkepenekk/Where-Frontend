@@ -13,6 +13,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { PlacedetailComponent } from './components/placedetail/placedetail.component';
+import { PlacesComponent } from './components/places/places.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { PlacedetailComponent } from './components/placedetail/placedetail.compo
     MainpageComponent,
     ProfileComponent,
     PlacedetailComponent,
+    PlacesComponent,
   ],
   imports: [
     BrowserModule,

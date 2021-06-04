@@ -6,6 +6,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { PlacedetailComponent } from './components/placedetail/placedetail.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginGuard } from './guards/login.guard';
+import { PlacesComponent } from './components/places/places.component';
 
 const routes: Routes = [
 
@@ -34,7 +35,11 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
-  }
+  },
+  {
+    path: 'places',
+    component: PlacesComponent,
+  },
 ];
 
 @NgModule({
