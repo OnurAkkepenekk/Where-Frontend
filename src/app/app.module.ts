@@ -14,6 +14,8 @@ import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { PlacedetailComponent } from './components/placedetail/placedetail.component';
 import { PlacesComponent } from './components/places/places.component';
+import { AgmCoreModule } from '@agm/core';
+import { MapssComponent } from './components/mapss/mapss.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { PlacesComponent } from './components/places/places.component';
     ProfileComponent,
     PlacedetailComponent,
     PlacesComponent,
+    MapssComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,9 @@ import { PlacesComponent } from './components/places/places.component';
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right',
     }),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCDTCEh0bNedipTgclzfqVBtEBPGquVmAI'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],
