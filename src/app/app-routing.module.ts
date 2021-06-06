@@ -7,6 +7,7 @@ import { PlacedetailComponent } from './components/placedetail/placedetail.compo
 import { RegisterComponent } from './components/register/register.component';
 import { LoginGuard } from './guards/login.guard';
 import { PlacesComponent } from './components/places/places.component';
+import { MapssComponent } from './components/mapss/mapss.component';
 
 const routes: Routes = [
 
@@ -39,6 +40,10 @@ const routes: Routes = [
   {
     path: 'places',
     component: PlacesComponent,
+  },
+  {
+    path: 'mapss',
+    component: MapssComponent,
   },
 ];
 
