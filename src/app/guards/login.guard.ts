@@ -10,7 +10,7 @@ import { AuthService } from '../services/auth.service';
 export class LoginGuard implements CanActivate {
 
   constructor(
-    private authSerrvice: AuthService,
+    private authService: AuthService,
     private toastrService: ToastrService,
     private router: Router
   ) {}
@@ -22,7 +22,7 @@ export class LoginGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    if (this.authSerrvice.isAuthenticated()) {
+    if (this.authService.isAuthenticated()) {
       return true;
     } else {
       this.router.navigate(['login']);
