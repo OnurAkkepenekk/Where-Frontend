@@ -1,7 +1,7 @@
 <body>
   <section>
     <div class="map">
-      <app-mapss></app-mapss>
+      <app-mapss [locations]="locations"></app-mapss>
     </div>
     
     <div class="placesblur"></div>
@@ -33,17 +33,20 @@
         <br>
         <div class="mekanlar">
           <div class="component-1">
+            <div *ngFor="let item of listOfLocations ;let i=index">
             <div class="flex-wrapper-one">
               <div class="flex-wrapper-two">
                 <img alt="" class="rectangle-10"
                   src="https://static.overlay-tech.com/assets/14676cb2-a9a0-457f-b9c2-77a38cb2ddb6.png" />
                 <div class="flex-wrapper-four">
-                  <p class="name">mekan ismi</p>
-                  <p class="type">kategori</p>
+                  <p class="name">{{i+1}}-{{item}}</p>
+                  <p class="type">"Merhaba"</p>
                   <p class="address">
                     adress
                     sehir uzaklık metre uzaklıkta)
                   </p>
+          </div>
+
                 </div>
               </div>
               <div class="flex-wrapper-three">
