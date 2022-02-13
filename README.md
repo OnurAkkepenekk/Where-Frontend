@@ -18,7 +18,3 @@ guide for you.
 
 #### Places Page Screen
 ![image](https://user-images.githubusercontent.com/61885344/148653498-8f79b078-bd60-4da5-b8a0-a8c8eb67c900.png)
-
-#### Place Details Screen
-![image](https://user-images.githubusercontent.com/61885344/148653504-9f0b18f9-abfd-4fd6-ad8a-c2ae26c4e93d.png)
-
